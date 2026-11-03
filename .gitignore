@@ -1,0 +1,54 @@
+# ── Rust / Cargo ─────────────────────────────────────────────
+/target/
+**/*.rs.bk
+*.pdb
+*.ilk
+*.exp
+*.dmp
+*.profraw
+
+# Keep Cargo.lock committed (binary crate)
+!Cargo.lock
+
+# ── Build / packaging output ─────────────────────────────────
+/dist/
+/build/
+/installer/
+*.msi
+*.msix
+*.appx
+*.nupkg
+/release/
+/bunkaru.exe
+
+# ── IDE / editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.fleet/
+*.swp
+*~
+
+# ── OS noise (Windows‑first) ─────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# ── Local machine state / secrets ────────────────────────────
+# providers.json contains absolute paths for this machine – ignore it.
+/providers.json
+/providers.local.json
+.env
+.env.*
+!.env.example
+*.log
+/logs/
+/cache/
